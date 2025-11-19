@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body{
+    margin: 0;
+}
+
+// inputfielt //
+.example-form-field .mat-mdc-text-field-wrapper {  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+// inputfielt //
+
+// btn //
+.btn-g-setting{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 8px 5px;
+}
